@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-page</title>
+  </head>
+  <link rel="stylesheet" href="output.css" />
+  <body class="bg-[#e9d6b1]">
+    <header class="h-[100px] p-[15px]">
+      <nav class="flex justify-between items-center font-bold">
+        <div>
+          <h4 class="text-[25px] italic">Sociwave</h4>
+        </div>
+        <div class="text-[14px] hidden md:flex">
+          <a href="" class="mx-[10px] capitalize">about</a>
+          <a href="" class="mx-[10px] capitalize">case Studies</a>
+          <a href="" class="mx-[10px] capitalize">services</a>
+          <a href="" class="mx-[10px] capitalize">pricing</a>
+        </div>
+        <div class="hidden md:flex">
+          <button
+            class="bg-[#ff7700] p-[15px] capitalize text-white rounded-full"
+          >
+            contact us
+          </button>
+        </div>
+        <!-- mobile icon -->
+        <div
+          class="bg-[#ff7700] p-[15px] capitalize text-white rounded-full md:hidden"
+        >
+          <button class="menu-button">Open-Menu</button>
+        </div>
+      </nav>
+      <!-- mobile menus display on mobile buttons click -->
+      <nav class="md:hidden hidden navTwo">
+        <div
+          class="text-[14px] bg-[#ff7700] text-white my-[1rem] p-[10px] pr-[10px] font-bold"
+        >
+          <div>
+            <div>
+              <a href="" class="mx-[10px] capitalize">about</a>
+            </div>
+            <hr />
+            <div>
+              <a href="" class="mx-[10px] capitalize">case Studies</a>
+            </div>
+            <hr />
+            <div>
+              <a href="" class="mx-[10px] capitalize">services</a>
+            </div>
+            <hr />
+            <div>
+              <a href="" class="mx-[10px] capitalize">pricing</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="text-center h-[20rem] md:my-[20px] mt-[8rem] md:mt[0px] tracking-[1px]">
+      <div>
+        <div class="w-2 h-2 rounded-full"></div>
+        <span class="font-bold tex-ce"> CONTACT US </span>
+        <div>
+          <h1 class="md:text-[50px] font-bold text-[25px]">
+            Let's discuss your <br>
+            next big project today.
+          </h1>
+        </div>
+        <div>
+          <p class="text-gray-500 md:font-[16px] font-bold font-[14px]">
+            Send us a message and we will respond quickly to <br>
+            arrange a personalized, valuable consultation
+          </p>
+        </div>
+        <br />
+        <div class="flex gap-[10px] justify-center md:flex-row flex-col">
+          <div>
+            <button class="bg-white text-black p-[12px] rounded-full">
+              See Projects
+            </button>
+          </div>
+          <div>
+            <button class="bg-black text-white p-[12px] rounded-full">
+              Explore Services
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- form-section -->
+       <form class="bg-orange-100 h-fit w-fit mt-10 md:mt-0 md:ml-95 rounded-lg p-10 mb-5 mx-5 md:mx-0">
+        <!-- Name and Phone -->
+        <div class="grid grid-cols-2 gap-4">
+
+            <div>
+                <label class="block mb-2 text-sm">Full Name</label>
+                <input type="text" placeholder="Jane Smith"
+                    class="w-full p-4 bg-white rounded-lg">
+            </div>
+
+            <div>
+                <label class="block mb-2 text-sm">Phone Number</label>
+                <input type="text" placeholder="+123 456 789 00" 
+                class="w-full p-4 bg-white rounded-lg">
+            </div>
+
+        </div>
+
+        <!-- Email -->
+        <div class="mt-6">
+            <label class="block mb-2 text-sm">Email Address</label>
+            <input type="email" placeholder="test@gmail.com"
+                class="w-full p-4 bg-white rounded-lg">
+        </div>
+
+        <!-- Service -->
+        <div class="mt-6">
+            <label class="block mb-2 text-sm">Select Service</label>
+
+            <select class="w-full p-4 bg-white rounded-lg text-gray-500">
+                <option>Select...</option>
+                <option>Web Development</option>
+                <option>Graphic Design</option>
+                <option>Editing</option>
+                <option>Game Development</option>
+            </select>
+        </div>
+
+        <!-- Message -->
+        <div class="mt-6">
+            <label class="block mb-2 text-sm">Message</label>
+
+            <textarea placeholder="Tell us about your business..."
+                class="w-full p-4 bg-white rounded-lg h-36"></textarea>
+        </div>
+
+        <!-- Button -->
+        <div class="mt-5">
+            <button class="bg-orange-400 text-white px-8 py-3 rounded-full hover:bg-orange-800">
+                Send Message
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+
+  
+       
+    
+
+    <script src="./index.js"></script>
+  </body>
+</html>
